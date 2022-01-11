@@ -1,0 +1,74 @@
+run:
+    # timeout for analysis, e.g. 30s, 5m, default is 1m
+    timeout: 5m
+
+    # include test files or not, default is true
+    tests: false
+
+linters:
+    enable:
+        - asciicheck
+        - bodyclose
+        - cyclop
+        - dogsled
+        - durationcheck
+        - errname
+        - errorlint
+        - exhaustive
+        - exportloopref
+        - forcetypeassert
+        - funlen
+        - gci
+        - gocognit
+        - goconst
+        - gocritic
+        - gocyclo
+        - godot
+        - goerr113
+        - goprintffuncname
+        - gosec
+        - ifshort
+        - importas
+        - lll
+        - makezero
+        - misspell
+        - nakedret
+        - nestif
+        - nilerr
+        - nlreturn
+        - noctx
+        - nolintlint
+        - paralleltest
+        - prealloc
+        - predeclared
+        - revive
+        - rowserrcheck
+        - exportloopref
+        - sqlclosecheck
+        - stylecheck
+        - thelper
+        - tparallel
+        - unconvert
+        - unparam
+        - wastedassign
+        - whitespace
+        - wrapcheck
+        - wsl
+        - tagliatelle
+
+linters-settings:
+    wsl:
+        enforce-err-cuddling: true
+    gocognit:
+        # minimal code complexity to report, 30 by default (but we recommend 10-20)
+        min-complexity: 15
+    gosec:
+        # Available rules: https://github.com/securego/gosec#available-rules
+        excludes:
+            - G104 # We are using errcheck linter for checking for unchecked errors.
+    errcheck:
+        exclude: .golangci_errcheck_exclude.txt
+
+issues:
+    # Disable default exclusion (otherwise most of golint issues are not catched)
+    exclude-use-default: false
