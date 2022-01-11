@@ -30,5 +30,5 @@ the simulated 'current time' command-line argument 16:10 the output should be
 19:00 today - /bin/run_me_sixty_times
 
 To run:
-go run main.go -schedule="$(cat input.txt)" -timer=16:10
+go run cmd/main.go -schedule="$(cat input.txt)" -timer=16:10
 */

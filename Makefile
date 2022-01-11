@@ -1,4 +1,3 @@
-MOCK_FOLDER=${PWD}/pkg/mock
 COVERAGE_FILE=$(IGNORED_FOLDER)/coverage.out
 IGNORED_FOLDER=.ignore
 
@@ -23,7 +22,7 @@ build: ## Build App
 ##
 
 mock: ## Mock
-	MOCK_FOLDER=${PWD}/mock go generate ./...
+	MOCK_FOLDER=${PWD}/pkg/mock go generate ./...
 
 lint: ## Lint
 	@golangci-lint run

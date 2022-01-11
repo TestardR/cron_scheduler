@@ -1,9 +1,0 @@
-mode: atomic
-github.com/TestardR/cron_scheduler/internal/handler/handler.go:35.33,39.37 2 2
-github.com/TestardR/cron_scheduler/internal/handler/handler.go:54.2,54.12 1 1
-github.com/TestardR/cron_scheduler/internal/handler/handler.go:39.37,41.17 2 2
-github.com/TestardR/cron_scheduler/internal/handler/handler.go:49.3,51.22 2 1
-github.com/TestardR/cron_scheduler/internal/handler/handler.go:41.17,46.4 3 1
-github.com/TestardR/cron_scheduler/internal/handler/handler.go:58.47,63.26 4 0
-github.com/TestardR/cron_scheduler/internal/handler/handler.go:67.2,75.18 3 0
-github.com/TestardR/cron_scheduler/internal/handler/handler.go:63.26,65.3 1 0

@@ -5,7 +5,7 @@ import (
 	"testing"
 
 	"github.com/TestardR/cron_scheduler/internal/cron"
-	"github.com/TestardR/cron_scheduler/mock"
+	"github.com/TestardR/cron_scheduler/pkg/mock"
 	"github.com/golang/mock/gomock"
 	"github.com/stretchr/testify/assert"
 )
